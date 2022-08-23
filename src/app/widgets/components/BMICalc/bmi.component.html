@@ -1,7 +1,9 @@
 <h1>BMI Calculator</h1>
 
-<h3>Height:</h3><input type="text" value="{{height}}">
-<h3>Weight:</h3><input type="text" value="{{weight}}">
+<h3>Height:</h3>
+<input type="text" #heightTextBox (input)="setHeight(heightTextBox.value)">
+<h3>Weight:</h3>
+<input type="text" #weightTextBox (input)="setWeight(weightTextBox.value)">
 
 <h4>BMI: {{bmiValue}}</h4>
 
